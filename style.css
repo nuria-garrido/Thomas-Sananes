@@ -1,0 +1,217 @@
+/* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    background-color: #eae7dc;
+    color: #2c2c2c;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-header img {
+    width: 6.25cm;
+    height: 6.25cm;
+    border-radius: 50%;
+    border: 4px solid #8c6f42;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile-header img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 {
+    color: #1d3557;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #8c6f42;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #1d3557;
+    font-size: 1.4em;
+    margin-top: 30px;
+    border-bottom: 2px solid #e0a400;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+nav.menu {
+    background: #1d3557;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav.menu ul li {
+    display: inline;
+}
+
+nav.menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav.menu ul li a:hover {
+    color: #e0a400;
+    text-decoration: underline;
+}
+
+.section {
+    background: rgba(234, 231, 220, 0.3);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 850px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+p {
+    text-align: justify;
+    color: #2c2c2c;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    font-size: 1.1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+}
+
+a {
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #e0a400;
+    font-weight: 400;
+}
+
+.icon-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon-links a {
+    font-size: 2.2em;
+    font-size: 1.8em;
+    color: #1d3557;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.icon-links a:hover {
+    color: #e0a400;
+    transform: scale(1.2);
+}
+
+/* Mejoras en la legibilidad en móviles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    h3 {
+        font-size: 1.1em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
+    .profile-header img {
+        width: 4.5cm;
+        height: 4.5cm;
+    }
+    
+    nav.menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
